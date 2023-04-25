@@ -1,9 +1,12 @@
-let myName
+const objectA = {
+    a: 10,
+    b: true
+}
 
-console.log(myName)
+const copyOfA = objectA
 
-myName = 'Vladislav'
+copyOfA.a = 20
+copyOfA.b = false
+copyOfA.c = 'Hello'
 
-console.log(myName)
-
-console.log(console.log(10))
+console.log(objectA)
