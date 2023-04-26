@@ -1,12 +1,16 @@
-const objectA = {
-    a: 10,
-    b: true
+const myFunctions = {
+    hello: 'Hello, Vladislav',
+    myCity() {
+        city: 'Your city is Sebastopol',
+        console.log('Your city is Sebastopol')
+    },
+    myLastName() {
+        lastName: 'Zimovec',
+        console.log('Zimovec')
+    },
+    sumMyInfo: function () {
+        console.log(this.hello + this.myLastName + this.city)
+    }
 }
 
-const copyOfA = objectA
-
-copyOfA.a = 20
-copyOfA.b = false
-copyOfA.c = 'Hello'
-
-console.log(objectA)
+myFunctions.sumMyInfo()
